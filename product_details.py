@@ -57,8 +57,10 @@ class ProductDetails:
 
 
 
-if __name__ == "__manin__":
+if __name__ == "__main__":
     details = ProductDetails("https://webscraper.io/test-sites/e-commerce/allinone")
     a = details.get_links_from_db()
     b = details.process_links(a)
     details.write_to_file(b)
+
+    print("process completed")
